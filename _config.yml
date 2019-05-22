@@ -4,7 +4,7 @@ title: "Madhu's Blog"
 description: "Madhu's Blog"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: /site
+baseurl: /
 google_analytics: 'UA-46278016-1'
 disqus: 'madhukumaar-com'
 mailchimp-list: ''

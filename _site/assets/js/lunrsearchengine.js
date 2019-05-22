@@ -1,32 +1,32 @@
 
 var documents = [{
     "id": 0,
-    "url": "http://localhost:4000/site/404.html",
+    "url": "http://localhost:4000//404.html",
     "title": "404",
     "body": "404 Page does not exist!Please use the search bar at the top or visit our homepage! "
     }, {
     "id": 1,
-    "url": "http://localhost:4000/site/about",
+    "url": "http://localhost:4000//about",
     "title": "About",
     "body": "I'm Madhukumaar T R and this is my personal blog. I write about things I like, things that I wish to share with the world.  You can find me on LinkedIn "
     }, {
     "id": 2,
-    "url": "http://localhost:4000/site/categories",
+    "url": "http://localhost:4000//categories",
     "title": "Categories",
     "body": ""
     }, {
     "id": 3,
-    "url": "http://localhost:4000/site/",
+    "url": "http://localhost:4000//",
     "title": "Home",
     "body": "      Featured:                                                                                                                                                                                                           My First Post                              :               This blog started as a result of dream I had. In the dream a close friend of mine says, “Something is written on your forehead”. . . . :                                                                       22 May 2019                &lt;/span&gt;                                                                                                      All Stories:                                                                                                     My First Post              :       This blog started as a result of dream I had. In the dream a close friend of mine says, “Something is written on your forehead”. :                               22 May 2019        &lt;/span&gt;                                    "
     }, {
     "id": 4,
-    "url": "http://localhost:4000/site/robots.txt",
+    "url": "http://localhost:4000//robots.txt",
     "title": "",
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 5,
-    "url": "http://localhost:4000/site/my-first-post/",
+    "url": "http://localhost:4000//my-first-post/",
     "title": "My First Post",
     "body": "2019/05/22 - This blog started as a result of dream I had. In the dream a close friend of mine says, “Something is written on your forehead”. It was written எழுதப்பழகு a combinations of two words in Tamil.  It is said that all words in a particular language cannot be translated into other without losing a part of the meaning. So the closest translation I can offer you is Make Writing a Habit I neither have any idea of what this all means nor I’m aware of where this path will take me. All that I’m willing to do, is give writing a try … "
     }];
