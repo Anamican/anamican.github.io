@@ -3,11 +3,72 @@
   <channel>
     <title>Madhu's Blog</title>
     <description>Madhu's Blog</description>
-    <link>http://localhost:4000//</link>
-    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 22 May 2019 22:45:39 +1000</pubDate>
-    <lastBuildDate>Wed, 22 May 2019 22:45:39 +1000</lastBuildDate>
+    <link>http://localhost:4000/site/</link>
+    <atom:link href="http://localhost:4000/site/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 23 May 2019 07:13:49 +1000</pubDate>
+    <lastBuildDate>Thu, 23 May 2019 07:13:49 +1000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>What's holding you back is not You but You</title>
+        <description>&lt;p&gt;I know the title seems confusing, but hear me out&lt;/p&gt;
+
+&lt;p&gt;Everyday we wake up, do some chores, get dressed, start to work or do whatever we feel like.&lt;/p&gt;
+
+&lt;p&gt;This basic feeling of &lt;code class=&quot;highlighter-rouge&quot;&gt;Self&lt;/code&gt; is something that is ingrained in us.&lt;/p&gt;
+
+&lt;p&gt;We look at the world as how we want the world to be and not as it is. And because of &lt;code class=&quot;highlighter-rouge&quot;&gt;Self&lt;/code&gt; imposition on the world, we fail to understand the underlying facts and figures about the world.&lt;/p&gt;
+
+&lt;p&gt;The question is not about whether we can change our view on the world or not.
+It’s about whether we accept the facts as it is and move on to do what we destined to do in this world.&lt;/p&gt;
+
+&lt;p&gt;Destiny is whole other debatable topic in itself, I’m not gonna get into the details of it in this post.&lt;/p&gt;
+
+&lt;p&gt;I know the feeling of consuming a lot of self-help content. I get it, it makes you feel good. Hell, it makes you feel like you are on the top of Mount Everest screaming your lungs out.&lt;/p&gt;
+
+&lt;p&gt;But the reality is, you just keep on consuming and consuming and run around in the same circle once you used to be. And ultimately you become a &lt;code class=&quot;highlighter-rouge&quot;&gt;Self Improvement Junkie&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Self Improvement Junkie is a person who keeps on consuming Personal Development Content and fails to take action&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The &lt;code class=&quot;highlighter-rouge&quot;&gt;feel-good&lt;/code&gt; nature of good content, makes us addicted to it, more like chained to it.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-can-you-do-to-improve&quot;&gt;What can you do to improve?&lt;/h3&gt;
+
+&lt;h4 id=&quot;take-action&quot;&gt;Take Action&lt;/h4&gt;
+
+&lt;p&gt;I hear ya, everyone says the same thing, from Tony Robbins to Tim Ferris. But taking action is hard, really, really hard.&lt;/p&gt;
+
+&lt;p&gt;Or is it?&lt;/p&gt;
+
+&lt;p&gt;This is the &lt;code class=&quot;highlighter-rouge&quot;&gt;Self&lt;/code&gt; imposition I am talking about. Whether it is hard or not it depends on us.&lt;/p&gt;
+
+&lt;h4 id=&quot;is-that-all-that-you-are-trying-to-say&quot;&gt;Is that all that you are trying to say?&lt;/h4&gt;
+
+&lt;p&gt;No. Absolutely not. I don’t wanna list out somethings that you can do to improve yourself.&lt;/p&gt;
+
+&lt;p&gt;I’m just gonna tell you one thing. &lt;code class=&quot;highlighter-rouge&quot;&gt;Take a deep breath and do it.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;That’s it. Whatever you are trying to do, that article you were trying to write once, that program you were smashing your brain on, that laundry that you were about do today, whatever it is, just &lt;code class=&quot;highlighter-rouge&quot;&gt;Take a deep breath and do it.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m gonna stop right here and let you make your move.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 23 May 2019 00:00:00 +1000</pubDate>
+        <link>http://localhost:4000/site/whats-holding-you-back-is-not-you-but-you/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/whats-holding-you-back-is-not-you-but-you/</guid>
+        
+        <category>self-improvement</category>
+        
+        <category>self</category>
+        
+        <category>holding-back</category>
+        
+        
+        <category>self-improvement</category>
+        
+      </item>
     
       <item>
         <title>My First Post</title>
@@ -26,8 +87,8 @@
 &lt;p&gt;All that I’m willing to do, is give writing a try …&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 May 2019 00:00:00 +1000</pubDate>
-        <link>http://localhost:4000//my-first-post/</link>
-        <guid isPermaLink="true">http://localhost:4000//my-first-post/</guid>
+        <link>http://localhost:4000/site/my-first-post/</link>
+        <guid isPermaLink="true">http://localhost:4000/site/my-first-post/</guid>
         
         <category>random</category>
         
