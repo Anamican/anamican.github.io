@@ -1,32 +1,37 @@
 
 var documents = [{
     "id": 0,
-    "url": "http://localhost:4000//404.html",
+    "url": "http://localhost:4000/site/404.html",
     "title": "404",
     "body": "404 Page does not exist!Please use the search bar at the top or visit our homepage! "
     }, {
     "id": 1,
-    "url": "http://localhost:4000//about",
+    "url": "http://localhost:4000/site/about",
     "title": "About",
     "body": "I'm Madhukumaar T R and this is my personal blog. I write about things I like, things that I wish to share with the world.  You can find me on LinkedIn "
     }, {
     "id": 2,
-    "url": "http://localhost:4000//categories",
+    "url": "http://localhost:4000/site/categories",
     "title": "Categories",
     "body": ""
     }, {
     "id": 3,
-    "url": "http://localhost:4000//",
+    "url": "http://localhost:4000/site/",
     "title": "Home",
-    "body": "      Featured:                                                                                                                                                                                                           My First Post                              :               This blog started as a result of dream I had. In the dream a close friend of mine says, “Something is written on your forehead”. . . . :                                                                       22 May 2019                &lt;/span&gt;                                                                                                      All Stories:                                                                                                     My First Post              :       This blog started as a result of dream I had. In the dream a close friend of mine says, “Something is written on your forehead”. :                               22 May 2019        &lt;/span&gt;                                    "
+    "body": "      Featured:                                                                                                                                                                                                           What's holding you back is not You but You                              :               I know the title seems confusing, but hear me out:                                                                       23 May 2019                &lt;/span&gt;                                                                                                                                                                                                                                                                                                  My First Post                              :               This blog started as a result of dream I had. In the dream a close friend of mine says, “Something is written on your forehead”. . . . :                                                                       22 May 2019                &lt;/span&gt;                                                                                                      All Stories:                                                                                                     What's holding you back is not You but You              :       I know the title seems confusing, but hear me out:                               23 May 2019        &lt;/span&gt;                                                                                                                             My First Post              :       This blog started as a result of dream I had. In the dream a close friend of mine says, “Something is written on your forehead”. :                               22 May 2019        &lt;/span&gt;                                    "
     }, {
     "id": 4,
-    "url": "http://localhost:4000//robots.txt",
+    "url": "http://localhost:4000/site/robots.txt",
     "title": "",
     "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
     }, {
     "id": 5,
-    "url": "http://localhost:4000//my-first-post/",
+    "url": "http://localhost:4000/site/whats-holding-you-back-is-not-you-but-you/",
+    "title": "What's holding you back is not You but You",
+    "body": "2019/05/23 - I know the title seems confusing, but hear me out Everyday we wake up, do some chores, get dressed, start to work or do whatever we feel like. This basic feeling of Self is something that is ingrained in us. We look at the world as how we want the world to be and not as it is. And because of Self imposition on the world, we fail to understand the underlying facts and figures about the world. The question is not about whether we can change our view on the world or not. It’s about whether we accept the facts as it is and move on to do what we destined to do in this world. Destiny is whole other debatable topic in itself, I’m not gonna get into the details of it in this post. I know the feeling of consuming a lot of self-help content. I get it, it makes you feel good. Hell, it makes you feel like you are on the top of Mount Everest screaming your lungs out. But the reality is, you just keep on consuming and consuming and run around in the same circle once you used to be. And ultimately you become a Self Improvement Junkie  Self Improvement Junkie is a person who keeps on consuming Personal Development Content and fails to take action The feel-good nature of good content, makes us addicted to it, more like chained to it. What can you do to improve?: Take Action: I hear ya, everyone says the same thing, from Tony Robbins to Tim Ferris. But taking action is hard, really, really hard. Or is it? This is the Self imposition I am talking about. Whether it is hard or not it depends on us. Is that all that you are trying to say?: No. Absolutely not. I don’t wanna list out somethings that you can do to improve yourself. I’m just gonna tell you one thing. Take a deep breath and do it. That’s it. Whatever you are trying to do, that article you were trying to write once, that program you were smashing your brain on, that laundry that you were about do today, whatever it is, just Take a deep breath and do it. I’m gonna stop right here and let you make your move. "
+    }, {
+    "id": 6,
+    "url": "http://localhost:4000/site/my-first-post/",
     "title": "My First Post",
     "body": "2019/05/22 - This blog started as a result of dream I had. In the dream a close friend of mine says, “Something is written on your forehead”. It was written எழுதப்பழகு a combinations of two words in Tamil.  It is said that all words in a particular language cannot be translated into other without losing a part of the meaning. So the closest translation I can offer you is Make Writing a Habit I neither have any idea of what this all means nor I’m aware of where this path will take me. All that I’m willing to do, is give writing a try … "
     }];
