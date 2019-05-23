@@ -21,6 +21,14 @@ authors:
     twitter: 
     description: "Full-Stack Engineer, Solution Architect, Author of Madhukumaar.com"
 
+# Using single author for now
+author:
+  name: Madhukumaar T R
+  display_name: Madhu
+  email: madhukumaartr@gmail.com
+  web: https://madhukumaar.com
+  description: "Full-Stack Engineer, Solution Architect, Author of Madhukumaar.com"
+
 # Plugins
 plugins:
   - jekyll-paginate

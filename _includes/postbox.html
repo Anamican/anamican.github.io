@@ -29,12 +29,12 @@
         </div>
         <div class="card-footer bg-white">
             <div class="wrapfooter">
-                {% if post.author %}
+                {% if site.author %}
                 <span class="meta-footer-thumb">
-                <img class="author-thumb" src="{{site.baseurl}}/assets/images/avatar.png" alt="{{ author.display_name }}">
+                <img class="author-thumb" src="{{site.baseurl}}/assets/images/avatar.png" alt="{{ site.author.display_name }}">
                 </span>
                 <span class="author-meta">
-                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
+                <span class="post-name">{{ site.author.display_name }}</span><br/>
                 {% endif %}
                 <span class="post-date">{{ post.date | date_to_string }}</span>
                 </span>
