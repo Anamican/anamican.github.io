@@ -5,7 +5,7 @@ description: "Madhu's Blog"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: /
-google_analytics: 'UA-46278016-1'
+google_analytics: 'UA-140815364-1'
 disqus: 'madhukumaar-com'
 mailchimp-list: ''
 include: ["_pages"]
