@@ -3,7 +3,7 @@ layout: post
 title:  "Getting high binge watching"
 categories: [ self-improvement ]
 tags: [ binge-watching, addiction ]
-featured: true
+featured: false
 image: assets/images/binge.jpg
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title:  "My First Post"
 categories: [ random ]
 tags: [random]
-featured: true
+featured: false
 image: assets/images/meandme.jpg
 ---
 
