@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Self-judgement defines who you are"
-categories: [ self-improvement ]
+categories: [ You ]
 tags: [ judgement, self-judgement, suicidal-thoughts ]
 featured: true
 image: assets/images/judging.jpg
