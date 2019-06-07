@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "My First Post"
-categories: [ random ]
-tags: [random]
+categories: [ first ]
+tags: [first-post]
 featured: false
 image: assets/images/dreams-dont-die.jpg
 ---
