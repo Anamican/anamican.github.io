@@ -3,10 +3,10 @@
   <channel>
     <title>Madhu's Blog</title>
     <description>Madhu's Blog</description>
-    <link>http://localhost:4000//</link>
-    <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Jun 2019 11:18:06 +1000</pubDate>
-    <lastBuildDate>Sun, 09 Jun 2019 11:18:06 +1000</lastBuildDate>
+    <link>http://localhost:4000/test/</link>
+    <atom:link href="http://localhost:4000/test/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 09 Jun 2019 11:47:31 +1000</pubDate>
+    <lastBuildDate>Sun, 09 Jun 2019 11:47:31 +1000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -47,8 +47,8 @@ But listen to yourself for a moment, if you dont feel good about yourself then n
 &lt;p&gt;Madhu&lt;/p&gt;
 </description>
         <pubDate>Thu, 06 Jun 2019 00:00:00 +1000</pubDate>
-        <link>http://localhost:4000//self-judgement-defines-who-you-are/</link>
-        <guid isPermaLink="true">http://localhost:4000//self-judgement-defines-who-you-are/</guid>
+        <link>http://localhost:4000/test/self-judgement-defines-who-you-are/</link>
+        <guid isPermaLink="true">http://localhost:4000/test/self-judgement-defines-who-you-are/</guid>
         
         <category>judgement</category>
         
@@ -106,8 +106,8 @@ So if we were to find a stoic hero who goes through a lot to get what he wants i
 
 </description>
         <pubDate>Mon, 03 Jun 2019 00:00:00 +1000</pubDate>
-        <link>http://localhost:4000//getting-high-binge-watching/</link>
-        <guid isPermaLink="true">http://localhost:4000//getting-high-binge-watching/</guid>
+        <link>http://localhost:4000/test/getting-high-binge-watching/</link>
+        <guid isPermaLink="true">http://localhost:4000/test/getting-high-binge-watching/</guid>
         
         <category>binge-watching</category>
         
@@ -165,8 +165,8 @@ It’s about whether we accept the facts as it is and move on to do what we dest
 
 </description>
         <pubDate>Thu, 23 May 2019 00:00:00 +1000</pubDate>
-        <link>http://localhost:4000//whats-holding-you-back-is-not-you-but-you/</link>
-        <guid isPermaLink="true">http://localhost:4000//whats-holding-you-back-is-not-you-but-you/</guid>
+        <link>http://localhost:4000/test/whats-holding-you-back-is-not-you-but-you/</link>
+        <guid isPermaLink="true">http://localhost:4000/test/whats-holding-you-back-is-not-you-but-you/</guid>
         
         <category>self-improvement</category>
         
@@ -203,8 +203,8 @@ into something big in the future&lt;/p&gt;
 &lt;p&gt;All that I’m willing to do, is give writing a try …&lt;/p&gt;
 </description>
         <pubDate>Wed, 22 May 2019 00:00:00 +1000</pubDate>
-        <link>http://localhost:4000//my-first-post/</link>
-        <guid isPermaLink="true">http://localhost:4000//my-first-post/</guid>
+        <link>http://localhost:4000/test/my-first-post/</link>
+        <guid isPermaLink="true">http://localhost:4000/test/my-first-post/</guid>
         
         <category>first-post</category>
         
