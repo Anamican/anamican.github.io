@@ -4,6 +4,7 @@ title:  "What's holding you back is not You but You"
 categories: [ You ]
 tags: [ self-improvement, self, holding-back]
 featured: true
+comments: true
 image: assets/images/chained.jpg
 ---
 
