@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about-me
 image: assets/images/meandme.jpg
-comments: true
+comments: false
 ---
 
 <div class="row justify-content-between">

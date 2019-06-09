@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/test/assets/images/logo.png">
+
+<title>Design - Principles & Patterns | Madhu's Blog</title>
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Design - Principles &amp; Patterns | Madhu’s Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Design - Principles &amp; Patterns" />
+<meta name="author" content="Madhukumaar T R" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Madhu’s Blog" />
+<meta property="og:description" content="Madhu’s Blog" />
+<link rel="canonical" href="http://localhost:4000/test/design-patterns" />
+<meta property="og:url" content="http://localhost:4000/test/design-patterns" />
+<meta property="og:site_name" content="Madhu’s Blog" />
+<meta property="og:image" content="http://localhost:4000/test/assets/images/snowflakes.jpg" />
+<script type="application/ld+json">
+{"image":"http://localhost:4000/test/assets/images/snowflakes.jpg","url":"http://localhost:4000/test/design-patterns","headline":"Design - Principles &amp; Patterns","author":{"@type":"Person","name":"Madhukumaar T R"},"description":"Madhu’s Blog","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/test/assets/images/logo.png"},"name":"Madhukumaar T R"},"@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/test/assets/css/screen.css" rel="stylesheet">
+
+<link href="/test/assets/css/main.css" rel="stylesheet">
+
+<script src="/test/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-page">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/test/">
+    <img src="/test/assets/images/logo.png" alt="Madhu's Blog">
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/test/categories#You">You</a>
+                </li>
+
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="/test/design-patterns"> Design - Principles & Patterns</a>
+                </li>
+
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link" href=" site.baseurl ">Deep - Dive</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="site.baseurl ">AlgoS</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="site.baseurl">ExAmples</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="site.baseurl">We</a>
+                </li>
+
+                 -->
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/test/about-me">Me</a>
+                </li>
+
+                <script src="/test/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/test/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle">Madhu's Blog</h1>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <section>
+
+    <div class="section-title">
+        <h2><span>Design - Principles & Patterns</span></h2>
+    </div>
+
+
+    <div class="section-page-image">
+    
+
+    
+    <img class="featured-image img-fluid lazyimg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="/test/assets/images/snowflakes.jpg" alt="Design - Principles & Patterns">
+    
+
+    
+    </div>
+
+    <div class="article-post">
+    <p>Have you ever wondered why snowflakes are created in a certain pattern or even a grain of sand?</p>
+
+<p>The simplest answer is: <code class="highlighter-rouge">Efficiency</code></p>
+
+<p>Nature follows a certain pattern just to make sure it is efficient, take Fibonacci series for example, it is <a href="https://insteading.com/blog/fibonacci-sequence-in-nature/">everywhere</a>.
+Here is <a href="https://www.fi.edu/math-patterns-nature">3 other cool patterns</a>, if you wanna learn more.</p>
+
+<p>We, as human beings learn everything from nature and apply those principles to every day lives. A part of those learnings are applied to software as well.</p>
+
+<p>We observed and understood certain patterns that happened again and again when solving a problem and grouped the solution patterns together forming <a href="https://en.wikipedia.org/wiki/Software_design_pattern"><code class="highlighter-rouge">Design Patterns</code></a></p>
+
+<p>Also, we found these patterns follow certain rules or principles and called them <a href="https://en.wikipedia.org/wiki/SOLID"><code class="highlighter-rouge">SOLID principles</code></a> . Talk about finding patterns within patterns <span>😄</span>, I feel like I’m in <a href="https://en.wikipedia.org/wiki/The_Matrix_(franchise)">The Matrix</a>.</p>
+
+<blockquote>
+  <p>There is <a href="https://amzn.to/2K4B8ql">a good book to learn these design patterns</a> if you wanna give it a try.</p>
+</blockquote>
+
+<p>Since there a lot of good sources for Design patterns, I’ll be focusing on explaining how each pattern is constructed and where to apply based on real-life applications. Be sure to book mark this page.
+I’ll be organizing this page on the go, more like refactoring <span>😄</span></p>
+
+
+    </div>
+
+
+    
+    <div id="comments" class="row mb-5">
+        <div class="col-md-8">
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script>
+
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+        var shortname = '';
+        var disqus_url = '/design-patterns';
+        var site_url = 'https://madhukumaar.com/';
+
+        var disqus_config = function () {
+        this.page.url = site_url;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = disqus_url; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://madhukumaar-com.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</section>
+
+        </div>
+    </div>
+    
+</section>
+</div>
+
+
+    
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2019 Madhu's Blog 
+            </div>
+            <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/test/assets/js/mediumish.js"></script>
+
+
+<script src="/test/assets/js/lazyload.js"></script>
+
+
+<script src="/test/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
+
+</body>
+</html>
