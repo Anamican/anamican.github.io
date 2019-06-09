@@ -4,6 +4,7 @@ title:  "Self-judgement defines who you are"
 categories: [ You ]
 tags: [ judgement, self-judgement, suicidal-thoughts ]
 featured: true
+comments: true
 image: assets/images/judging.jpg
 ---
 

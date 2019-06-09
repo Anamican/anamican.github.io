@@ -4,6 +4,7 @@ title:  "Getting high binge watching"
 categories: [ You ]
 tags: [ binge-watching, addiction ]
 featured: false
+comments: true
 image: assets/images/binge.jpg
 ---
 
