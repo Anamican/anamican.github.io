@@ -4,7 +4,7 @@ title:  "My First Post"
 categories: [ first ]
 tags: [first-post]
 featured: false
-comments: false
+comments: true
 image: assets/images/dreams-dont-die.jpg
 ---
 
