@@ -23,6 +23,9 @@
 <loc>http://localhost:4000/test/categories</loc>
 </url>
 <url>
+<loc>http://localhost:4000/test/design-patterns</loc>
+</url>
+<url>
 <loc>http://localhost:4000/test/</loc>
 </url>
 <url>
