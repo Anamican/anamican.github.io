@@ -24,7 +24,12 @@ Also, we found these patterns follow certain rules or principles and called them
 
 
 Since there a lot of good sources for Design patterns, I'll be focusing on explaining how each pattern is constructed and where to apply based on real-life applications. Be sure to book mark this page.
-I'll be organizing this page on the go, more like refactoring <span>&#128516;</span>
+I'll be re-organizing this page on the go, more like refactoring <span>&#128516;</span>
+
+
+### Behavioural Patterns
+
+#### [Strategy Pattern(link)]({{site.url}}/design-patterns/strategy-pattern) 
 
   
 
