@@ -16,12 +16,6 @@
 
 <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
 
-<!-- Accordion CSS -->
-<link href="{{ site.baseurl }}/assets/css/accordion/animate.css" rel="stylesheet">
-<link href="{{ site.baseurl }}/assets/css/accordion/style.css" rel="stylesheet">
-<!-- Accordion CSS -->
-
-
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 
 </head>
@@ -185,10 +179,8 @@ ga('send', 'pageview');
 <script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
 {% if page.layout == 'post' %}
-<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+<script id="dsq-count-scr" src="//{{site.disqus.shortname}}.disqus.com/count.js"></script>
 {% endif %}
-
-<script src="{{ site.baseurl }}/assets/js/jquery.multipurpose_tabcontent.js"></script>
 
 </body>
 </html>
