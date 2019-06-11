@@ -29,7 +29,7 @@ I'll be re-organizing this page on the go, more like refactoring <span>&#128516;
 
 ### Behavioural Patterns
 
-#### [Strategy Pattern(link)]({{site.url}}/design-patterns/strategy-pattern) 
+#### [Strategy Pattern]({{site.url}}/design-patterns/strategy-pattern) 
 
   
 

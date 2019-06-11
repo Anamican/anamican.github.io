@@ -265,6 +265,12 @@
 
 <p>Remember what I was talking above, these different sorting can be implemented as below:</p>
 
+<ul>
+  <li><a href="#php-implementation">PHP Implementation</a></li>
+  <li><a href="#golang-implementation">Golang Implementation</a></li>
+</ul>
+
+<h4 id="php"><a id="php-implementation">PHP</a></h4>
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
@@ -523,6 +529,264 @@
     )
 </pre></td></tr></tbody></table></code></pre></div></div>
 
+<h4 id="golang"><a id="golang-implementation">Golang</a></h4>
+
+<div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+</pre></td><td class="rouge-code"><pre><span class="x">    </span><span class="k">package</span><span class="x"> </span><span class="n">main</span><span class="x">
+    
+    </span><span class="k">import</span><span class="x"> </span><span class="p">(</span><span class="x">
+        </span><span class="s">"encoding/json"</span><span class="x">
+        </span><span class="s">"fmt"</span><span class="x">
+        </span><span class="s">"sort"</span><span class="x">
+    </span><span class="p">)</span><span class="x">
+    
+    </span><span class="c">// Product struct</span><span class="x">
+    </span><span class="k">type</span><span class="x"> </span><span class="n">Product</span><span class="x"> </span><span class="k">struct</span><span class="x"> </span><span class="p">{</span><span class="x">
+        </span><span class="n">Name</span><span class="x"> </span><span class="kt">string</span><span class="x">
+        </span><span class="n">Price</span><span class="x"> </span><span class="kt">int64</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+    
+    </span><span class="c">// Sorter interface</span><span class="x">
+    </span><span class="k">type</span><span class="x"> </span><span class="n">Sorter</span><span class="x"> </span><span class="k">interface</span><span class="x"> </span><span class="p">{</span><span class="x">
+        </span><span class="n">Sort</span><span class="p">(</span><span class="n">products</span><span class="x"> </span><span class="p">[]</span><span class="o">*</span><span class="n">Product</span><span class="p">)[]</span><span class="o">*</span><span class="n">Product</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+    
+    </span><span class="c">// ByNameSorter struct</span><span class="x">
+    </span><span class="k">type</span><span class="x"> </span><span class="n">ByNameSorter</span><span class="x"> </span><span class="k">struct</span><span class="x"> </span><span class="p">{}</span><span class="x">
+    
+    </span><span class="c">// ByPriceSorter struct</span><span class="x">
+    </span><span class="k">type</span><span class="x"> </span><span class="n">ByPriceSorter</span><span class="x"> </span><span class="k">struct</span><span class="x"> </span><span class="p">{}</span><span class="x">
+    
+    
+    </span><span class="c">// Sort sorts the product by By Name</span><span class="x">
+    </span><span class="k">func</span><span class="p">(</span><span class="n">b</span><span class="x"> </span><span class="n">ByNameSorter</span><span class="p">)</span><span class="x"> </span><span class="n">Sort</span><span class="p">(</span><span class="n">products</span><span class="x"> </span><span class="p">[]</span><span class="o">*</span><span class="n">Product</span><span class="p">)[]</span><span class="o">*</span><span class="n">Product</span><span class="p">{</span><span class="x">
+        </span><span class="n">sort</span><span class="o">.</span><span class="n">Slice</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="k">func</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="x"> </span><span class="kt">int</span><span class="p">)</span><span class="kt">bool</span><span class="p">{</span><span class="x">
+            </span><span class="c">// Sort By Name</span><span class="x">
+            </span><span class="k">return</span><span class="x"> </span><span class="n">products</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">Name</span><span class="x"> </span><span class="o">&lt;</span><span class="x"> </span><span class="n">products</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">Name</span><span class="x">
+        </span><span class="p">})</span><span class="x">
+        </span><span class="k">return</span><span class="x"> </span><span class="n">products</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+    
+    </span><span class="c">// Sort sorts the product by By Price</span><span class="x">
+    </span><span class="k">func</span><span class="p">(</span><span class="n">b</span><span class="x"> </span><span class="n">ByPriceSorter</span><span class="p">)</span><span class="x"> </span><span class="n">Sort</span><span class="p">(</span><span class="n">products</span><span class="x"> </span><span class="p">[]</span><span class="o">*</span><span class="n">Product</span><span class="p">)[]</span><span class="o">*</span><span class="n">Product</span><span class="p">{</span><span class="x">
+        </span><span class="n">sort</span><span class="o">.</span><span class="n">Slice</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="k">func</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="x"> </span><span class="kt">int</span><span class="p">)</span><span class="kt">bool</span><span class="p">{</span><span class="x">
+            </span><span class="c">// Sort By Price</span><span class="x">
+            </span><span class="k">return</span><span class="x"> </span><span class="n">products</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">Price</span><span class="x"> </span><span class="o">&lt;</span><span class="x"> </span><span class="n">products</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="o">.</span><span class="n">Price</span><span class="x">
+        </span><span class="p">})</span><span class="x">
+        </span><span class="k">return</span><span class="x"> </span><span class="n">products</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+    
+    </span><span class="c">// SortContext struct</span><span class="x">
+    </span><span class="k">type</span><span class="x"> </span><span class="n">SortContext</span><span class="x"> </span><span class="k">struct</span><span class="x"> </span><span class="p">{}</span><span class="x">
+    
+    </span><span class="c">// SortBy context</span><span class="x">
+    </span><span class="k">func</span><span class="p">(</span><span class="n">sc</span><span class="x"> </span><span class="o">*</span><span class="n">SortContext</span><span class="p">)</span><span class="x"> </span><span class="n">SortBy</span><span class="p">(</span><span class="n">products</span><span class="x"> </span><span class="p">[]</span><span class="o">*</span><span class="n">Product</span><span class="p">,</span><span class="x"> </span><span class="n">s</span><span class="x"> </span><span class="n">Sorter</span><span class="p">)[]</span><span class="o">*</span><span class="n">Product</span><span class="p">{</span><span class="x">
+        </span><span class="k">return</span><span class="x"> </span><span class="n">s</span><span class="o">.</span><span class="n">Sort</span><span class="p">(</span><span class="n">products</span><span class="p">)</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+    
+    </span><span class="c">// getProducts returns products array</span><span class="x">
+    </span><span class="k">func</span><span class="x"> </span><span class="n">getProducts</span><span class="p">()[]</span><span class="o">*</span><span class="n">Product</span><span class="p">{</span><span class="x">
+        </span><span class="k">var</span><span class="x"> </span><span class="n">products</span><span class="x"> </span><span class="p">[]</span><span class="o">*</span><span class="n">Product</span><span class="x">
+    
+        </span><span class="n">products</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="nb">append</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="o">&amp;</span><span class="n">Product</span><span class="p">{</span><span class="x">
+            </span><span class="n">Name</span><span class="o">:</span><span class="x"> </span><span class="s">"Mobile"</span><span class="p">,</span><span class="x">
+            </span><span class="n">Price</span><span class="o">:</span><span class="x"> </span><span class="m">12</span><span class="p">,</span><span class="x">
+        </span><span class="p">})</span><span class="x">
+    
+        </span><span class="n">products</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="nb">append</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="o">&amp;</span><span class="n">Product</span><span class="p">{</span><span class="x">
+            </span><span class="n">Name</span><span class="o">:</span><span class="x"> </span><span class="s">"Camera"</span><span class="p">,</span><span class="x">
+            </span><span class="n">Price</span><span class="o">:</span><span class="x"> </span><span class="m">20</span><span class="p">,</span><span class="x">
+        </span><span class="p">})</span><span class="x">
+    
+        </span><span class="n">products</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="nb">append</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="o">&amp;</span><span class="n">Product</span><span class="p">{</span><span class="x">
+            </span><span class="n">Name</span><span class="o">:</span><span class="x"> </span><span class="s">"Flask"</span><span class="p">,</span><span class="x">
+            </span><span class="n">Price</span><span class="o">:</span><span class="x"> </span><span class="m">5</span><span class="p">,</span><span class="x">
+        </span><span class="p">})</span><span class="x">
+    
+        </span><span class="n">products</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="nb">append</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="o">&amp;</span><span class="n">Product</span><span class="p">{</span><span class="x">
+            </span><span class="n">Name</span><span class="o">:</span><span class="x"> </span><span class="s">"Coffee Mug"</span><span class="p">,</span><span class="x">
+            </span><span class="n">Price</span><span class="o">:</span><span class="x"> </span><span class="m">10</span><span class="p">,</span><span class="x">
+        </span><span class="p">})</span><span class="x">
+    
+        </span><span class="n">products</span><span class="x"> </span><span class="o">=</span><span class="x"> </span><span class="nb">append</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="o">&amp;</span><span class="n">Product</span><span class="p">{</span><span class="x">
+            </span><span class="n">Name</span><span class="o">:</span><span class="x"> </span><span class="s">"Laptop"</span><span class="p">,</span><span class="x">
+            </span><span class="n">Price</span><span class="o">:</span><span class="x"> </span><span class="m">40</span><span class="p">,</span><span class="x">
+        </span><span class="p">})</span><span class="x">
+    
+        </span><span class="k">return</span><span class="x"> </span><span class="n">products</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+    
+    
+    </span><span class="k">func</span><span class="x"> </span><span class="n">prettyFormat</span><span class="p">(</span><span class="n">i</span><span class="x"> </span><span class="k">interface</span><span class="p">{})</span><span class="x"> </span><span class="kt">string</span><span class="x"> </span><span class="p">{</span><span class="x">
+        </span><span class="n">s</span><span class="p">,</span><span class="x"> </span><span class="n">_</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">json</span><span class="o">.</span><span class="n">MarshalIndent</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="x"> </span><span class="s">""</span><span class="p">,</span><span class="x"> </span><span class="s">"</span><span class="se">\t</span><span class="s">"</span><span class="p">)</span><span class="x">
+        </span><span class="k">return</span><span class="x"> </span><span class="kt">string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="x">
+    </span><span class="p">}</span><span class="x">
+    
+    </span><span class="k">func</span><span class="x"> </span><span class="n">main</span><span class="p">(){</span><span class="x">
+    
+        </span><span class="n">products</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">getProducts</span><span class="p">()</span><span class="x">
+        </span><span class="n">sCtx</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="o">&amp;</span><span class="n">SortContext</span><span class="p">{}</span><span class="x">
+    
+        </span><span class="n">sortedByName</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">sCtx</span><span class="o">.</span><span class="n">SortBy</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="n">ByNameSorter</span><span class="p">{})</span><span class="x">
+        </span><span class="n">sortedByPrice</span><span class="x"> </span><span class="o">:=</span><span class="x"> </span><span class="n">sCtx</span><span class="o">.</span><span class="n">SortBy</span><span class="p">(</span><span class="n">products</span><span class="p">,</span><span class="x"> </span><span class="n">ByPriceSorter</span><span class="p">{})</span><span class="x">
+    
+        </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">prettyFormat</span><span class="p">(</span><span class="n">sortedByName</span><span class="p">))</span><span class="x">
+        </span><span class="n">fmt</span><span class="o">.</span><span class="n">Println</span><span class="p">(</span><span class="n">prettyFormat</span><span class="p">(</span><span class="n">sortedByPrice</span><span class="p">))</span><span class="x">
+    
+    </span><span class="p">}</span><span class="x">
+
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Running this will return:</p>
+
+<pre><code class="language-commandline">[
+           {
+                   "Name": "Flask",
+                   "Price": 5
+           },
+           {
+                   "Name": "Coffee Mug",
+                   "Price": 10
+           },
+           {
+                   "Name": "Mobile",
+                   "Price": 12
+           },
+           {
+                   "Name": "Camera",
+                   "Price": 20
+           },
+           {
+                   "Name": "Laptop",
+                   "Price": 40
+           }
+   ]
+   [
+           {
+                   "Name": "Flask",
+                   "Price": 5
+           },
+           {
+                   "Name": "Coffee Mug",
+                   "Price": 10
+           },
+           {
+                   "Name": "Mobile",
+                   "Price": 12
+           },
+           {
+                   "Name": "Camera",
+                   "Price": 20
+           },
+           {
+                   "Name": "Laptop",
+                   "Price": 40
+           }
+   ]
+</code></pre>
+
 
             </div>
 
@@ -628,7 +892,7 @@
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-        var shortname = '';
+        var shortname = 'madhukumaar-com';
         var disqus_url = '/design-patterns/strategy-pattern';
         var site_url = 'https://madhukumaar.com/';
 
@@ -714,7 +978,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
 <script src="/test/assets/js/ie10-viewport-bug-workaround.js"></script> 
 
 
-<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+<script id="dsq-count-scr" src="//madhukumaar-com.disqus.com/count.js"></script>
 
 
 </body>
