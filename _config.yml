@@ -11,6 +11,9 @@ include: ["_pages"]
 permalink: /:title/
 siteurl: https://madhukumaar.com/
 
+disqus:
+  shortname: 'madhukumaar-com'
+
 # Authors
 authors:
   madhu:
