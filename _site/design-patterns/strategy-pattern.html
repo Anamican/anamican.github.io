@@ -225,9 +225,9 @@
 
 <p>I’m pretty sure we all have dropped our phones at least once, but only when it falls at the right angle do we pay for our mistakes.</p>
 
-<p>Though I use my phone only for taking calls and Google maps, I still miss it. After saying goodbyes, I was desperately browsing for <a target="_blank" href="https://www.amazon.com.au/gp/search?ie=UTF8&amp;tag=anamica-22&amp;linkCode=ur2&amp;linkId=078ab941e58c5b60b4ee336ff375193a&amp;camp=247&amp;creative=1211&amp;index=electronics&amp;keywords=dual sim mobile phones">Dual Sim Mobile Phones</a><img src="//ir-au.amazon-adsystem.com/e/ir?t=anamica-22&amp;l=ur2&amp;o=36" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> on Amazon.</p>
+<p>Though I use my phone only for taking calls and Google maps, I still miss it. After saying goodbyes, I was desperately browsing for <a target="_blank" href="https://www.amazon.com.au/gp/search?ie=UTF8&amp;tag=anamica-22&amp;linkCode=ur2&amp;linkId=078ab941e58c5b60b4ee336ff375193a&amp;camp=247&amp;creative=1211&amp;index=electronics&amp;keywords=dual sim mobile phones">Dual Sim Mobile Phones</a><img src="//ir-au.amazon-adsystem.com/e/ir?t=anamica-22&amp;l=ur2&amp;o=36" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> on Amazon, which is when it hit me.</p>
 
-<p>One of the key features we use in most e-commerce platforms is sorting the product list either by price or new arrivals etc…</p>
+<p>One of the key features we use in most e-commerce platforms like Amazon is sorting the product list either by price or new arrivals etc…</p>
 
 <p>But from an software design and architectural perspective:</p>
 
@@ -244,6 +244,12 @@
 </ul>
 
 <p>Strategy lets the algorithm vary independently from clients that use it.</p>
+
+<blockquote>
+  <p>A simple example is, you use your hand to draw, to write, to have food, to play cards etc… Based on the context your strategy differs, but you use the same hands</p>
+</blockquote>
+
+<p>Let’s see how this is translated in the program world…</p>
 
 <h3 id="uml-and-case-diagram">UML and Case Diagram</h3>
 
@@ -263,7 +269,7 @@
   <p>Context — is configured with a ConcreteStrategy Object; maintains a reference to a Strategy object; may define an interface that lets Strategy access its data.</p>
 </blockquote>
 
-<p>Remember what I was talking above, these different sorting can be implemented as below:</p>
+<p>Remember what I was talking above with respect to Amazon, these different sorting can be implemented as below:</p>
 
 <ul>
   <li><a href="#php-implementation">PHP Implementation</a></li>
@@ -787,6 +793,13 @@
    ]
 </code></pre>
 
+<p>I’ll be adding implementations in Python and Typescript for the same sorting example, here, in a while</p>
+
+<p>I have added the same codes in <a href="https://github.com/Anamican/design-patterns">Github</a>. I’ll be adding more examples for each pattern and language in their respective folders.</p>
+
+<p>To your success,</p>
+
+<p>Madhu</p>
 
             </div>
 

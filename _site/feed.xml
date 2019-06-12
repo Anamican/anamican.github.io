@@ -5,8 +5,8 @@
     <description>Madhu's Blog</description>
     <link>http://localhost:4000/test/</link>
     <atom:link href="http://localhost:4000/test/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Jun 2019 08:37:05 +1000</pubDate>
-    <lastBuildDate>Wed, 12 Jun 2019 08:37:05 +1000</lastBuildDate>
+    <pubDate>Wed, 12 Jun 2019 18:04:31 +1000</pubDate>
+    <lastBuildDate>Wed, 12 Jun 2019 18:04:31 +1000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -15,9 +15,9 @@
 
 &lt;p&gt;I’m pretty sure we all have dropped our phones at least once, but only when it falls at the right angle do we pay for our mistakes.&lt;/p&gt;
 
-&lt;p&gt;Though I use my phone only for taking calls and Google maps, I still miss it. After saying goodbyes, I was desperately browsing for &lt;a target=&quot;_blank&quot; href=&quot;https://www.amazon.com.au/gp/search?ie=UTF8&amp;amp;tag=anamica-22&amp;amp;linkCode=ur2&amp;amp;linkId=078ab941e58c5b60b4ee336ff375193a&amp;amp;camp=247&amp;amp;creative=1211&amp;amp;index=electronics&amp;amp;keywords=dual sim mobile phones&quot;&gt;Dual Sim Mobile Phones&lt;/a&gt;&lt;img src=&quot;//ir-au.amazon-adsystem.com/e/ir?t=anamica-22&amp;amp;l=ur2&amp;amp;o=36&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt; on Amazon.&lt;/p&gt;
+&lt;p&gt;Though I use my phone only for taking calls and Google maps, I still miss it. After saying goodbyes, I was desperately browsing for &lt;a target=&quot;_blank&quot; href=&quot;https://www.amazon.com.au/gp/search?ie=UTF8&amp;amp;tag=anamica-22&amp;amp;linkCode=ur2&amp;amp;linkId=078ab941e58c5b60b4ee336ff375193a&amp;amp;camp=247&amp;amp;creative=1211&amp;amp;index=electronics&amp;amp;keywords=dual sim mobile phones&quot;&gt;Dual Sim Mobile Phones&lt;/a&gt;&lt;img src=&quot;//ir-au.amazon-adsystem.com/e/ir?t=anamica-22&amp;amp;l=ur2&amp;amp;o=36&quot; width=&quot;1&quot; height=&quot;1&quot; border=&quot;0&quot; alt=&quot;&quot; style=&quot;border:none !important; margin:0px !important;&quot; /&gt; on Amazon, which is when it hit me.&lt;/p&gt;
 
-&lt;p&gt;One of the key features we use in most e-commerce platforms is sorting the product list either by price or new arrivals etc…&lt;/p&gt;
+&lt;p&gt;One of the key features we use in most e-commerce platforms like Amazon is sorting the product list either by price or new arrivals etc…&lt;/p&gt;
 
 &lt;p&gt;But from an software design and architectural perspective:&lt;/p&gt;
 
@@ -34,6 +34,12 @@
 &lt;/ul&gt;
 
 &lt;p&gt;Strategy lets the algorithm vary independently from clients that use it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A simple example is, you use your hand to draw, to write, to have food, to play cards etc… Based on the context your strategy differs, but you use the same hands&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let’s see how this is translated in the program world…&lt;/p&gt;
 
 &lt;h3 id=&quot;uml-and-case-diagram&quot;&gt;UML and Case Diagram&lt;/h3&gt;
 
@@ -53,7 +59,7 @@
   &lt;p&gt;Context — is configured with a ConcreteStrategy Object; maintains a reference to a Strategy object; may define an interface that lets Strategy access its data.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Remember what I was talking above, these different sorting can be implemented as below:&lt;/p&gt;
+&lt;p&gt;Remember what I was talking above with respect to Amazon, these different sorting can be implemented as below:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#php-implementation&quot;&gt;PHP Implementation&lt;/a&gt;&lt;/li&gt;
@@ -577,6 +583,13 @@
    ]
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;p&gt;I’ll be adding implementations in Python and Typescript for the same sorting example, here, in a while&lt;/p&gt;
+
+&lt;p&gt;I have added the same codes in &lt;a href=&quot;https://github.com/Anamican/design-patterns&quot;&gt;Github&lt;/a&gt;. I’ll be adding more examples for each pattern and language in their respective folders.&lt;/p&gt;
+
+&lt;p&gt;To your success,&lt;/p&gt;
+
+&lt;p&gt;Madhu&lt;/p&gt;
 </description>
         <pubDate>Mon, 10 Jun 2019 00:00:00 +1000</pubDate>
         <link>http://localhost:4000/test/design-patterns/strategy-pattern</link>

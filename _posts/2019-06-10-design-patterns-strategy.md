@@ -13,9 +13,9 @@ It's been five years since I had my first Android phone, and today was the day i
 
 I'm pretty sure we all have dropped our phones at least once, but only when it falls at the right angle do we pay for our mistakes.
 
-Though I use my phone only for taking calls and Google maps, I still miss it. After saying goodbyes, I was desperately browsing for <a target="_blank" href="https://www.amazon.com.au/gp/search?ie=UTF8&tag=anamica-22&linkCode=ur2&linkId=078ab941e58c5b60b4ee336ff375193a&camp=247&creative=1211&index=electronics&keywords=dual sim mobile phones">Dual Sim Mobile Phones</a><img src="//ir-au.amazon-adsystem.com/e/ir?t=anamica-22&l=ur2&o=36" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> on Amazon.
+Though I use my phone only for taking calls and Google maps, I still miss it. After saying goodbyes, I was desperately browsing for <a target="_blank" href="https://www.amazon.com.au/gp/search?ie=UTF8&tag=anamica-22&linkCode=ur2&linkId=078ab941e58c5b60b4ee336ff375193a&camp=247&creative=1211&index=electronics&keywords=dual sim mobile phones">Dual Sim Mobile Phones</a><img src="//ir-au.amazon-adsystem.com/e/ir?t=anamica-22&l=ur2&o=36" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /> on Amazon, which is when it hit me. 
 
-One of the key features we use in most e-commerce platforms is sorting the product list either by price or new arrivals etc... 
+One of the key features we use in most e-commerce platforms like Amazon is sorting the product list either by price or new arrivals etc... 
 
 But from an software design and architectural perspective:
 
@@ -30,6 +30,10 @@ But from an software design and architectural perspective:
  
 Strategy lets the algorithm vary independently from clients that use it.
 
+> A simple example is, you use your hand to draw, to write, to have food, to play cards etc... Based on the context your strategy differs, but you use the same hands
+
+Let's see how this is translated in the program world...
+
 ### UML and Case Diagram
 
 ![Strategy UML]({{site.siteurl}}assets/images/design-patterns/strategy/strategy-pattern-uml.jpg)
@@ -43,7 +47,7 @@ Participants of Strategy Pattern:
 
 > Context — is configured with a ConcreteStrategy Object; maintains a reference to a Strategy object; may define an interface that lets Strategy access its data.
 
-Remember what I was talking above, these different sorting can be implemented as below:
+Remember what I was talking above with respect to Amazon, these different sorting can be implemented as below:
 
 - [PHP Implementation](#php-implementation)
 - [Golang Implementation](#golang-implementation)
@@ -341,3 +345,11 @@ Running this will return:
    ]
 ```
 
+
+I'll be adding implementations in Python and Typescript for the same sorting example, here, in a while
+
+I have added the same codes in [Github](https://github.com/Anamican/design-patterns). I'll be adding more examples for each pattern and language in their respective folders.      
+
+To your success,
+
+Madhu
