@@ -346,7 +346,121 @@ Running this will return:
 ```
 
 
-I'll be adding implementations in Python and Typescript for the same sorting example, here, in a while
+#### <a id="python-implementation">Python</a>
+
+Python supports multiple inheritance, so there is no concept of interface.
+Hence, in Python Strategy can be implemented in multiple ways, I showing two of them here.
+
+The first is using Class and inheritance
+
+```python
+# Sorting Strategy
+class Sort:
+    def algorithm(self, sort_list): pass
+
+
+# Sort by Name
+class ByName(Sort):
+    def algorithm(self, sort_list):
+        return sorted(sort_list, key=lambda dct: dct['name'])
+
+
+# Sort by Price
+class ByPrice(Sort):
+    def algorithm(self, sort_list):
+        return sorted(sort_list, key=lambda dct: dct['price'])
+
+
+# Sorter Context
+class SorterContext:
+    def __init__(self, strategy):
+        self.strategy = strategy
+
+    def sort(self, sort_list):
+        return self.strategy.algorithm(sort_list)
+
+    def change_algorithm(self, new_algorithm):
+        self.strategy = new_algorithm
+
+
+products = [
+    {'name': 'Mobie', 'price': 12},
+    {'name': 'Camera', 'price': 20},
+    {'name': 'Flask', 'price': 5},
+    {'name': 'Coffee mug', 'price': 10},
+    {'name': 'Laptop', 'price': 40},
+]
+
+sorting = SorterContext(ByName())
+sorted_by_name = sorting.sort(products)
+
+print(sorted_by_name)
+
+sorting.change_algorithm(ByPrice())
+sorted_by_price = sorting.sort(products)
+
+print(sorted_by_price)
+
+```
+
+
+The second is using function and using them as object
+
+```python
+# Sort by name
+def sort_by_name(sort_list):
+    return sorted(sort_list, key=lambda dct: dct['name'])
+
+
+# Sort by price
+def sort_by_price(sort_list):
+    return sorted(sort_list, key=lambda dct: dct['price'])
+
+
+products = [
+    {'name': 'Mobie', 'price': 12},
+    {'name': 'Camera', 'price': 20},
+    {'name': 'Flask', 'price': 5},
+    {'name': 'Coffee mug', 'price': 10},
+    {'name': 'Laptop', 'price': 40},
+]
+
+# Choose the strategy
+sort = sort_by_name
+
+# Execute strategy
+print(sort(products))
+
+
+# Choose the strategy
+sort = sort_by_price
+
+# Execute strategy
+print(sort(products))
+
+```
+
+Both the method above will return the following:
+
+```commandline
+[
+ {'name': 'Camera', 'price': 20}, 
+ {'name': 'Coffee mug', 'price': 10},
+ {'name': 'Flask', 'price': 5}, 
+ {'name': 'Laptop', 'price': 40}, 
+ {'name': 'Mobie', 'price': 12}
+]
+
+[
+ {'name': 'Flask', 'price': 5},
+ {'name': 'Coffee mug', 'price': 10},
+ {'name': 'Mobie', 'price': 12},
+ {'name': 'Camera', 'price': 20},
+ {'name': 'Laptop', 'price': 40}
+]
+```
+
+I'll be adding implementations in  Typescript for the same sorting example, here, in a while
 
 I have added the same codes in [Github](https://github.com/Anamican/design-patterns). I'll be adding more examples for each pattern and language in their respective folders.      
 
