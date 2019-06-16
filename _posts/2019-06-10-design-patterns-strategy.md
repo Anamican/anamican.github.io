@@ -52,6 +52,7 @@ Remember what I was talking above with respect to Amazon, these different sortin
 - [PHP Implementation](#php-implementation)
 - [Golang Implementation](#golang-implementation)
 - [Python Implementation](#python-implementation)
+- [TypeScript Implementation](#typescript-implementation)
                 
                 
 #### <a id="php-implementation">PHP</a>              
@@ -465,7 +466,80 @@ Both the method above will return the following:
 ]
 ```
 
-I'll be adding implementations in  Typescript for the same sorting example, here, in a while
+#### <a id="typescript-implementation">TypeScript</a>
+
+
+```typescript
+
+// Interface for Sort
+interface SortStrategy {
+    sort(products: string[]): string[];
+}
+
+// Sort by Ascending
+class ByNameAscending implements SortStrategy{
+    sort(products: string[]): string[]{
+        products.sort((a, b) => {
+            if(a > b) return 1;
+            if(a < b) return -1;
+            return 0;
+        });
+        return products;
+    }
+}
+
+// Sort by Descending
+class ByNameDescending implements SortStrategy{
+    sort(products: string[]): string[]{
+        products.sort((a, b) => {
+            if(a > b) return -1;
+            if(a < b) return 1;
+            return 0;
+        });
+        return products;
+    }
+}
+
+
+// Sorter context
+class Sorter{
+
+    private strategy: SortStrategy;
+
+    constructor(strategy: SortStrategy){
+        this.strategy = strategy;
+    }
+
+    public setStrategy(strategy: SortStrategy) {
+        this.strategy = strategy;
+    }
+
+    public sort(products: string[]): string[]{
+        return this.strategy.sort(products)
+    }
+}
+
+const products = ["Mobie", "Camera", "Flask", "Laptop", "Mug"];
+
+const sorter = new Sorter(new ByNameAscending());
+console.log(sorter.sort(products));
+
+sorter.setStrategy(new ByNameDescending());
+console.log(sorter.sort(products));
+
+```
+
+By running the above the following will be returned
+
+```commandline
+npx tsc sorting.ts
+node sorting.js 
+
+[ 'Camera', 'Flask', 'Laptop', 'Mobie', 'Mug' ]
+[ 'Mug', 'Mobie', 'Laptop', 'Flask', 'Camera' ]
+    
+```
+
 
 I have added the same codes in [Github](https://github.com/Anamican/design-patterns). I'll be adding more examples for each pattern and language in their respective folders.      
 
