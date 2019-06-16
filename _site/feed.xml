@@ -5,8 +5,8 @@
     <description>Madhu's Blog</description>
     <link>http://localhost:4000//</link>
     <atom:link href="http://localhost:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Jun 2019 06:36:01 +1000</pubDate>
-    <lastBuildDate>Mon, 17 Jun 2019 06:36:01 +1000</lastBuildDate>
+    <pubDate>Mon, 17 Jun 2019 06:44:41 +1000</pubDate>
+    <lastBuildDate>Mon, 17 Jun 2019 06:44:41 +1000</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -64,6 +64,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#php-implementation&quot;&gt;PHP Implementation&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#golang-implementation&quot;&gt;Golang Implementation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#python-implementation&quot;&gt;Python Implementation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;php&quot;&gt;&lt;a id=&quot;php-implementation&quot;&gt;PHP&lt;/a&gt;&lt;/h4&gt;
@@ -751,6 +752,10 @@ Hence, in Python Strategy can be implemented in multiple ways, I showing two of 
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;products&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;From the second method, I hear what you are trying to say, we could simply call the function instead of assign it to variable and then calling the variable.&lt;/p&gt;
+
+&lt;p&gt;But the logic here is if we were to call another function which chooses the startegy based on some other criteria, and returns back the object, all we have to do is call the sort() function&lt;/p&gt;
 
 &lt;p&gt;Both the method above will return the following:&lt;/p&gt;
 
