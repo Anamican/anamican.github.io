@@ -51,6 +51,7 @@ Remember what I was talking above with respect to Amazon, these different sortin
 
 - [PHP Implementation](#php-implementation)
 - [Golang Implementation](#golang-implementation)
+- [Python Implementation](#python-implementation)
                 
                 
 #### <a id="php-implementation">PHP</a>              
@@ -439,6 +440,10 @@ sort = sort_by_price
 print(sort(products))
 
 ```
+
+From the second method, I hear what you are trying to say, we could simply call the function instead of assign it to variable and then calling the variable.
+
+But the logic here is if we were to call another function which chooses the startegy based on some other criteria, and returns back the object, all we have to do is call the sort() function   
 
 Both the method above will return the following:
 
